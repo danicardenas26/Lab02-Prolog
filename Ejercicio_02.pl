@@ -14,3 +14,6 @@ camino(Actual, Meta, Visitados, [Actual|Resto]) :-
     siguiente_estado(Actual, Sig),
     not(member(Sig, Visitados)),
     camino(Sig, Meta, [Sig|Visitados], Resto).
+
+%Query
+camino(baticueva, arkham, [baticueva], Ruta).
