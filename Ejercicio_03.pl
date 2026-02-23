@@ -26,3 +26,6 @@ no_ataca(R1, [R2|T], Dist) :-
     Diff2 is R2 - R1, Diff2 \== Dist, % Diagonal 2
     Dist1 is Dist + 1,
     no_ataca(R1, T, Dist1).
+
+%Query
+reinas(8, Solucion).
