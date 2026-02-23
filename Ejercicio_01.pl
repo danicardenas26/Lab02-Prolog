@@ -16,3 +16,5 @@ resolver(Actual, Meta, Visitados, [Actual|Resto]) :-
     movimiento(Actual, Siguiente),
     not(member(Siguiente, Visitados)),
     resolver(Siguiente, Meta, [Siguiente|Visitados], Resto).
+
+resolver([v,v,v,e,m,m,m], [m,m,m,e,v,v,v], [[v,v,v,e,m,m,m]], Sol).
